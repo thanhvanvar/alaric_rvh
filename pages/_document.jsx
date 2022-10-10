@@ -15,7 +15,7 @@ export default function Document() {
                 <link href="/assets/img/logo-alaric.png" rel="icon"/>
                 <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
                 {/*  Google Fonts*/}
-                <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+                <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=optional"
                       rel="stylesheet"/>
                 {/* Vendor CSS Files*/}
                 <link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet"/>
