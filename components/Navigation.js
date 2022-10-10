@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useEffect,useRef} from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Navigation() {
+
+
+
     return (
         <>
             <nav className="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
@@ -28,30 +31,26 @@ export default function Navigation() {
 
                     <div className="navbar-collapse collapse justify-content-center" id="navbarDefault">
                         <ul className="navbar-nav">
-
                             <li className="nav-item">
-                                <a className="nav-link" href="index.html">Tổng quan dự án</a>
-                            </li>
-
-                            <li className="nav-item">
-                                <a className="nav-link" href="about.html">Tiện ích</a>
-                            </li>
-
-                            <li className="nav-item">
-                                <a className="nav-link" href="property-grid.html">Vị trí</a>
-                            </li>
-
-                            <li className="nav-item">
-                                <a className="nav-link " href="blog-grid.html">Mặt bằng</a>
+                                <Link  href="#section_four" scroll={false}><a className="nav-link">Tổng quan dự án</a></Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link " href="blog-grid.html">Video dự án</a>
+                                <Link  href="#section_six" scroll={false}><a className="nav-link">Vị trí</a></Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link " href="blog-grid.html">Phương thức thanh toán</a>
+                                <Link  href="#section_eight" scroll={false}><a className="nav-link">Tiện ích</a></Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="blog-grid.html">Tư vấn</a>
+                                <Link  href="#section_nine" scroll={false}><a className="nav-link">Mặt bằng</a></Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link  href="#section_ten" scroll={false}><a className="nav-link">Video dự án</a></Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link  href="#PTTT" scroll={false}><a className="nav-link">Phương thức thanh toán</a></Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link  href="#section_eleven" scroll={false}><a className="nav-link">Tư vấn</a></Link>
                             </li>
                         </ul>
                     </div>

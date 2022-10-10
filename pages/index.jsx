@@ -36,6 +36,7 @@ export default function Home() {
     return (
         <>
             <div className="click-closed"/>
+
             <Navigation/>
             <Swiper
                 modules={[Pagination]}
@@ -72,7 +73,7 @@ export default function Home() {
                 </SwiperSlide>
             </Swiper>
             <main id="main">
-                <section className="section-services section-t8 section_two" style={{
+                <section id="section_two" className="section-services section-t8 section_two" style={{
                     backgroundColor: '#05303a',
                     backgroundImage: 'url(/assets/img/ALR2.png)',
                     backgroundSize: 'cover',
@@ -85,6 +86,7 @@ export default function Home() {
                             <Col md={{span: 3, offset: 3}}>
                                 <Image
                                     src="/assets/img/slide-2.jpg"
+                                    alt=''
                                     layout="intrinsic"
                                     width={700}
                                     height={475}
@@ -115,12 +117,13 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="section-property section-t8 section_four">
+                <section id="section_four" className="section-property section-t8 section_four">
                     <Container>
                         <Row className="row_one">
                             <Col className="col_one" md={{span: 3}}>
                                 <Image
                                     src="/assets/img/Layer_9.png"
+                                    alt=''
                                     layout="intrinsic"
                                     width={700}
                                     height={1175}
@@ -130,6 +133,7 @@ export default function Home() {
                             <Col className="col_two" md={{span: 3}}>
                                 <Image
                                     src="/assets/img/1-coi-xay-gio.jpg"
+                                    alt=''
                                     layout="intrinsic"
                                     width={700}
                                     height={1175}
@@ -159,6 +163,7 @@ export default function Home() {
                                         <div className="text_nine">ĐƠN VỊ PHÁT TRIỂN</div>
                                         <Image
                                             src="/assets/img/dkrv.png"
+                                            alt=''
                                             layout="intrinsic"
                                             width={119}
                                             height={45}
@@ -169,6 +174,7 @@ export default function Home() {
                                         <div className="text_ten">CHỦ ĐẦU TƯ</div>
                                         <Image
                                             src="/assets/img/tdg.png"
+                                            alt=''
                                             layout="intrinsic"
                                             width={99}
                                             height={104}
@@ -179,6 +185,7 @@ export default function Home() {
                                         <div className="text_eleven">VẬN HÀNH VÀ KHAI THÁC</div>
                                         <Image
                                             src="/assets/img/eastin.png"
+                                            alt=''
                                             layout="intrinsic"
                                             width={112}
                                             height={131}
@@ -191,10 +198,11 @@ export default function Home() {
                     </Container>
                 </section>
 
-                <section className="section-services mt-4 section_five">
+                <section id="section_five" className="section-services mt-4 section_five">
                     <div className="overlay_bg">
                         <Image
                             src="/assets/img/img_play.png"
+                            alt=''
                             layout="intrinsic"
                             width={100}
                             height={100}
@@ -204,7 +212,7 @@ export default function Home() {
 
                 </section>
 
-                <section className="section-agents section-t8 section_six">
+                <section id="section_six" className="section-agents section-t8 section_six">
                     <Container>
                         <Row>
                             <Col md={{span: 12}}>
@@ -220,6 +228,7 @@ export default function Home() {
                             <Col md={{span: 7}}>
                                 <Image
                                     src="/assets/img/sh2.jpg"
+                                    alt=''
                                     layout="intrinsic"
                                     width={770}
                                     height={419}
@@ -254,12 +263,13 @@ export default function Home() {
                         </Row>
                     </Container>
                 </section>
-                <section className="section-agents section-t8 section_seven">
+                <section id="section_seven" className="section-agents section-t8 section_seven">
                     <Container>
                         <Row className="row_one">
                             <Col md={{span: 12}}>
                                 <Image
                                     src="/assets/img/vi-tri.png"
+                                    alt=''
                                     layout="intrinsic"
                                     width={1779}
                                     height={1178}
@@ -269,7 +279,7 @@ export default function Home() {
                         </Row>
                     </Container>
                 </section>
-                <section className="section-agents section-t8 section_eight">
+                <section id="section_eight" className="section-agents section-t8 section_eight">
                     <Container>
                         <Row className="row_one">
                             <Col className="col_one" md={{span: 6}}>
@@ -299,6 +309,7 @@ export default function Home() {
                             <Col md={{span: 12}}>
                                 <Image
                                     src="/assets/img/s-8.png"
+                                    alt=''
                                     layout="intrinsic"
                                     width={3556}
                                     height={2118}
@@ -308,7 +319,7 @@ export default function Home() {
                         </Row>
                     </Container>
                 </section>
-                <section className="section-agents section-t8 section_nine">
+                <section id="section_nine" className="section-agents section-t8 section_nine">
                     <Container>
                         <Row className="row_one">
                             <Col md={{span: 12}}>
@@ -340,6 +351,7 @@ export default function Home() {
                             <Col className="col_two">
                                 <Image
                                     src="/assets/img/s-9.png"
+                                    alt=''
                                     layout="intrinsic"
                                     width={3840}
                                     height={2160}
@@ -351,6 +363,7 @@ export default function Home() {
                             <Col md={{span: 12}}>
                                 <Image
                                     src="/assets/img/s-9-3.png"
+                                    alt=''
                                     layout="intrinsic"
                                     width={3334}
                                     height={859}
@@ -369,7 +382,7 @@ export default function Home() {
                         </Row>
                     </Container>
                 </section>
-                <section className="section-agents section_ten">
+                <section id="section_ten" className="section-agents section_ten">
                     <div className="overlay_bg_two section-t8 section-b8">
                         <Container>
                             <Row className="row_one">
@@ -402,7 +415,7 @@ export default function Home() {
                                     />
                                 </Col>
                             </Row>
-                            <Row className="row_three">
+                            <Row id="PTTT" className="row_three">
                                 <Col md={{span: 12}}>
                                     <div className="title-wrap d-flex justify-content-center">
                                         <div className="title-box">
@@ -417,6 +430,7 @@ export default function Home() {
                                 <Col className="display_icon" md={{span: 4, offset: 2}}>
                                     <Image
                                         src="/assets/img/icon-s-10.png"
+                                        alt=''
                                         layout="intrinsic"
                                         width={100}
                                         height={100}
@@ -430,6 +444,7 @@ export default function Home() {
                                 <Col className="display_icon" md={{span: 4, offset: 2}}>
                                     <Image
                                         src="/assets/img/icon-s-10-1.png"
+                                        alt=''
                                         layout="intrinsic"
                                         width={100}
                                         height={100}
@@ -443,6 +458,7 @@ export default function Home() {
                                 <Col className="display_icon" md={{span: 4, offset: 2}}>
                                     <Image
                                         src="/assets/img/icon-s-10-2.png"
+                                        alt=''
                                         layout="intrinsic"
                                         width={100}
                                         height={100}
@@ -456,6 +472,7 @@ export default function Home() {
                                 <Col className="display_icon" md={{span: 4, offset: 2}}>
                                     <Image
                                         src="/assets/img/icon-s-10-3.png"
+                                        alt=''
                                         layout="intrinsic"
                                         width={100}
                                         height={100}
@@ -470,7 +487,7 @@ export default function Home() {
                         </Container>
                     </div>
                 </section>
-                <section className="section-agents section_eleven">
+                <section id="section_eleven" className="section-agents section_eleven">
                     <div className="overlay_bg_two section-t8 section-b8">
                         <Container>
                             <Row className="row_one">
@@ -519,6 +536,7 @@ export default function Home() {
                         <Col md={{span: 3}}>
                             <Image
                                 src="/assets/img/logo-rvh.png"
+                                alt=''
                                 layout="intrinsic"
                                 width={250}
                                 height={90}
