@@ -101,7 +101,7 @@
   /**
    * Intro Carousel
    */
-  new Swiper('.intro-carousel', {
+  /*new Swiper('.intro-carousel', {
     speed: 600,
     loop: true,
     autoplay: {
@@ -114,12 +114,12 @@
       type: 'bullets',
       clickable: true
     }
-  });
+  });*/
 
   /**
    * Property carousel
    */
-  new Swiper('#property-carousel', {
+  /*new Swiper('#property-carousel', {
     speed: 600,
     loop: true,
     autoplay: {
@@ -143,12 +143,12 @@
         spaceBetween: 20
       }
     }
-  });
+  });*/
 
   /**
    * News carousel
    */
-  new Swiper('#news-carousel', {
+  /*new Swiper('#news-carousel', {
     speed: 600,
     loop: true,
     autoplay: {
@@ -172,12 +172,12 @@
         spaceBetween: 20
       }
     }
-  });
+  });*/
 
   /**
    * Testimonial carousel
    */
-  new Swiper('#testimonial-carousel', {
+  /*new Swiper('#testimonial-carousel', {
     speed: 600,
     loop: true,
     autoplay: {
@@ -190,12 +190,12 @@
       type: 'bullets',
       clickable: true
     }
-  });
+  });*/
 
   /**
    * Property Single carousel
    */
-  new Swiper('#property-single-carousel', {
+  /*new Swiper('#property-single-carousel', {
     speed: 600,
     loop: true,
     autoplay: {
@@ -207,6 +207,6 @@
       type: 'bullets',
       clickable: true
     }
-  });
+  });*/
 
 })()

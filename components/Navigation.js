@@ -1,23 +1,58 @@
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Navigation() {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <nav className="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
                 <div className="container">
-
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false"
                             aria-label="Toggle navigation">
-                        Menu
+                        <span/>
+                        <span/>
+                        <span/>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarResponsive">
-                        <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                            <li className="nav-item"><a className="nav-link" href="#services">Services</a></li>
-                            <li className="nav-item"><a className="nav-link" href="#portfolio">Portfolio</a></li>
-                            <li className="nav-item"><a className="nav-link" href="#about">About</a></li>
-                            <li className="nav-item"><a className="nav-link" href="#team">Team</a></li>
-                            <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
+                    <Link className="navbar-brand text-brand" href="/">
+                        <a>
+                            <Image
+                                src="/assets/img/logo-alaric.png"
+                                alt="logo"
+                                width={48}
+                                height={70}
+                                priority
+                            />
+                        </a>
+                    </Link>
+
+                    <div className="navbar-collapse collapse justify-content-center" id="navbarDefault">
+                        <ul className="navbar-nav">
+
+                            <li className="nav-item">
+                                <a className="nav-link" href="index.html">Tổng quan dự án</a>
+                            </li>
+
+                            <li className="nav-item">
+                                <a className="nav-link" href="about.html">Tiện ích</a>
+                            </li>
+
+                            <li className="nav-item">
+                                <a className="nav-link" href="property-grid.html">Vị trí</a>
+                            </li>
+
+                            <li className="nav-item">
+                                <a className="nav-link " href="blog-grid.html">Mặt bằng</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link " href="blog-grid.html">Video dự án</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link " href="blog-grid.html">Phương thức thanh toán</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="blog-grid.html">Tư vấn</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
