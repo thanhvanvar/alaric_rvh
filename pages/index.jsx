@@ -159,7 +159,7 @@ export default function Home() {
                                 <hr/>
                                 <div className="text_eight">Loại hình sản phẩm: Nhà sát biển</div>
                                 <Row className="row_two">
-                                    <Col md={{span: 4}}>
+                                    <Col md={{span: 4}} xs={{span:4}}>
                                         <div className="text_nine">ĐƠN VỊ PHÁT TRIỂN</div>
                                         <Image
                                             src="/assets/img/dkrv.png"
@@ -170,7 +170,7 @@ export default function Home() {
                                             objectFit={'cover'}
                                         />
                                     </Col>
-                                    <Col md={{span: 4}}>
+                                    <Col md={{span: 4}} xs={{span:4}}>
                                         <div className="text_ten">CHỦ ĐẦU TƯ</div>
                                         <Image
                                             src="/assets/img/tdg.png"
@@ -181,7 +181,7 @@ export default function Home() {
                                             objectFit={'cover'}
                                         />
                                     </Col>
-                                    <Col md={{span: 4}}>
+                                    <Col md={{span: 4}} xs={{span:4}}>
                                         <div className="text_eleven">VẬN HÀNH VÀ KHAI THÁC</div>
                                         <Image
                                             src="/assets/img/eastin.png"
@@ -236,7 +236,25 @@ export default function Home() {
                                 />
                             </Col>
                             <Col className='col_two' md={{span: 4}}>
-                                <Card className="bg-dark text-white card_one">
+                                <h2 className="title-a title_one section_title">“TÂM MẠCH GIAO THOA
+                                    THỊNH VƯỢNG”</h2>
+                                <p>
+                                    Alaric Tower tọa lạc trên “cung đường vàng” Ba Tháng Hai – vị thế huyết mạch
+                                    kết nối
+                                    các danh lam thắng cảnh của tỉnh Vũng Tàu. Alaric Tower trấn giữ vị trí cửa
+                                    ngõ du
+                                    lịch nối liền các tỉnh phía Nam như Thành phố Hồ Chí Minh - Đồng Nai - Vũng
+                                    Tàu.
+                                    <br/>
+                                    <br/>
+                                    Được thừa hưởng riêng vẻ đẹp của thiên nhiên từ bãi tắm Chí Linh dài hơn
+                                    500m, tại
+                                    đây cư dân chỉ “một bước chạm đến đại dương” khi Alaric Tower có vị trí nằm
+                                    sát
+                                    biển. Cư dân an tâm trải nghiệm một cách riêng tư và trọn vẹn nhất cùng gia
+                                    đình.
+                                </p>
+                                {/*<Card className="bg-dark text-white card_one">
                                     <Card.Img src="/assets/img/vi-tri-2.png" alt="Card image"/>
                                     <Card.ImgOverlay>
                                         <Card.Title>“TÂM MẠCH GIAO THOA
@@ -258,7 +276,7 @@ export default function Home() {
                                             đình.
                                         </Card.Text>
                                     </Card.ImgOverlay>
-                                </Card>
+                                </Card>*/}
                             </Col>
                         </Row>
                     </Container>
@@ -322,7 +340,7 @@ export default function Home() {
                 <section id="section_nine" className="section-agents section-t8 section_nine">
                     <Container>
                         <Row className="row_one">
-                            <Col md={{span: 12}}>
+                            <Col md={{span: 12}} >
                                 <div className="title-wrap d-flex justify-content-center">
                                     <div className="title-box">
                                         <h2 style={{color: '#fff'}} className="title-a title_one section_title">MẶT BẰNG
@@ -333,7 +351,7 @@ export default function Home() {
                             </Col>
                         </Row>
                         <Row className="row_two">
-                            <Col className="col_one">
+                            <Col className="col_one" md={6}>
                                 <p className="text_one">
                                     Alaric Tower Vũng Tàu sở hữu diện tích quy hoạch 3.562 m2 và tổng diện tích sàn lên
                                     đến 59.821,6 m2 nằm trong quần thể nghỉ dưỡng cao cấp The Maris Vũng Tàu.
@@ -348,7 +366,7 @@ export default function Home() {
                                     mọi nhu cầu từ thiết yếu đến xa xỉ của cư dân trong cuộc sống.
                                 </p>
                             </Col>
-                            <Col className="col_two">
+                            <Col className="col_two" md={6}>
                                 <Image
                                     src="/assets/img/s-9.png"
                                     alt=''
@@ -500,22 +518,16 @@ export default function Home() {
                                 </Col>
                             </Row>
                             <Row className="row_two">
-                                <Col md={{span: 4, offset: 7}}>
-                                    <Card className="bg-dark text-white card_one">
-                                        <Card.Img src="/assets/img/vi-tri-2.png" alt="Card image"/>
-                                        <Card.ImgOverlay>
-                                            <Card.Text>
-                                                <Form.Control className="input_form" type="nam"
-                                                              placeholder="Họ và Tên"/>
-                                                <Form.Control className="input_form" type="email" placeholder="Email"/>
-                                                <Form.Control className="input_form" type="phone"
-                                                              placeholder="Số điện thoại"/>
-                                                <Button className="mt-5 btn_submit" variant="primary" type="submit">
-                                                    TƯ VẤN VÀ NHẬN BẢNG GIÁ TỐT NHẤT
-                                                </Button>
-                                            </Card.Text>
-                                        </Card.ImgOverlay>
-                                    </Card>
+                                <Col className="col_one" md={{span: 4, offset: 7}}>
+                                    <Form.Control className="input_form" type="nam"
+                                                  placeholder="Họ và Tên"/>
+                                    <Form.Control className="input_form" type="email" placeholder="Email"/>
+                                    <Form.Control className="input_form" type="phone"
+                                                  placeholder="Số điện thoại"/>
+                                    <Button className="mt-5 btn_submit" variant="primary" type="submit">
+                                        TƯ VẤN VÀ NHẬN BẢNG GIÁ TỐT NHẤT
+                                    </Button>
+
                                 </Col>
                             </Row>
                         </Container>
@@ -528,7 +540,7 @@ export default function Home() {
                     <Row className="row_one">
                         <Col md={{span: 12}}>
                             <h2 className="title-a section_title_footer">
-                               CÔNG TY CỔ PHẦN DKRV HOLDINGS
+                                CÔNG TY CỔ PHẦN DKRV HOLDINGS
                             </h2>
                         </Col>
                     </Row>
@@ -547,10 +559,12 @@ export default function Home() {
                             <div className="w-footer-a">
                                 <ul className="list-unstyled">
                                     <li className="color-a">
-                                        <span className="color-text-a"><i className="bi bi-pin-map"/></span> 13 Đặng Tất, Phường Tân Định, Quận 1, TP.HCM
+                                        <span className="color-text-a"><i className="bi bi-pin-map"/></span> 13 Đặng
+                                        Tất, Phường Tân Định, Quận 1, TP.HCM
                                     </li>
                                     <li className="color-a">
-                                        <span className="color-text-a"><i className="bi bi-envelope"/></span> info@dkrvholdings.vn
+                                        <span className="color-text-a"><i
+                                            className="bi bi-envelope"/></span> info@dkrvholdings.vn
                                     </li>
                                 </ul>
                             </div>

@@ -4,8 +4,6 @@ import Image from "next/image";
 
 export default function Navigation() {
 
-
-
     return (
         <>
             <nav className="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">

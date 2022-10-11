@@ -16,6 +16,7 @@
     "react-dom": "18.2.0",
     "react-hydration-provider": "^1.0.1",
     "react-youtube": "^10.0.0",
+    "sharp": "^0.31.1",
     "swiper": "^8.4.2"
   },
   "devDependencies": {
