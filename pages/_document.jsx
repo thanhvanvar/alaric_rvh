@@ -11,22 +11,12 @@ export default function Document() {
                 <meta charSet="utf-8"/>
                 <meta content="" name="description"/>
                 <meta content="" name="keywords"/>
-                {/* Favicons */}
                 <link href="/assets/img/logo-alaric.png" rel="icon"/>
                 <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
-                {/*  Google Fonts*/}
-                <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=optional"
-                      rel="stylesheet"/>
-                {/* Vendor CSS Files*/}
-                {/*<link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet"/>
-                <link href="/assets/vendor/bootstrap/css/bootstrap.min.css"
-                      rel="stylesheet"/>
-                <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
-                      rel="stylesheet"/>
-                <link href="/assets/vendor/swiper/swiper-bundle.min.css"
-                      rel="stylesheet"/>*/}
-                {/*<link href="/assets/css/style.css" rel="stylesheet"/>*/}
-                <link href="/assets/css/my_style.css" rel="stylesheet"/>
+                <link
+                    href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=optional"
+                    rel="stylesheet"
+                />
             </Head>
             <body>
             <Main/>

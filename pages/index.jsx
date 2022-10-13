@@ -83,13 +83,13 @@ export default function Home() {
                 }}>
                     <div className="container">
                         <Row className="row_one">
-                            <Col md={{span: 3, offset: 3}}>
+                            <Col md={{span: 5, offset: 3}}>
                                 <Image
-                                    src="/assets/img/slide-2.jpg"
+                                    src="/assets/img/s2-img-text.png"
                                     alt=''
                                     layout="intrinsic"
-                                    width={700}
-                                    height={475}
+                                    width={963}
+                                    height={272}
                                     objectFit={'cover'}
                                 />
                             </Col>
