@@ -1,14 +1,18 @@
 import * as React from 'react';
 import Image from 'next/image'
-import {useRef, useState} from "react";
+import {useState} from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
+
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal)
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import {Pagination,Navigation, Mousewheel, Keyboard} from "swiper";
-import YouTube, {YouTubeProps} from 'react-youtube';
+import {Pagination} from "swiper";
 import NavigationHtml from "../components/Navigation";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -22,18 +26,63 @@ import Carousel from 'react-bootstrap/Carousel';
 
 export default function Home() {
 
-    const Slides = [
-        'assets/img/slide-1.jpg',
-        'assets/img/slide-2.jpg',
-        'assets/img/slide-3.jpg',
-    ]
+    const [inputs, setInputs] = useState({});
+    const handleChange = (event) => {
+        const name = event.target.name;
+        const value = event.target.value;
+        setInputs(values => ({...values, [name]: value}))
+        console.log(name)
+    }
+    const handleSubmit = (event) => {
+        const today = new Date();
+        const date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+        const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        const dateTime = date + ' ' + time;
+        event.preventDefault();
+        let formData = new FormData();
+        formData.append('name', event.target.name.value);
+        formData.append('email', event.target.email.value);
+        formData.append('phone', event.target.phone.value);
+        formData.append('datetime', dateTime);
 
-    function HtmlSlide() {
-        return (
-            Slides.map((Slide, index) => (
-                <div key={index}>{Slide}</div>
-            ))
-        )
+        if(event.target.name.value==''){
+            MySwal.fire({
+                icon: 'error',
+                title: 'Thất bại',
+                text: 'Vui lòng điền tên',
+            })
+            return false
+        }
+        if(event.target.phone.value==''){
+            MySwal.fire({
+                icon: 'error',
+                title: 'Thất bại',
+                text: 'Vui lòng điền số điện thoại',
+            })
+            return false
+        }
+        fetch("https://script.google.com/macros/s/AKfycbzTaVuPlCywFHqqSjkIJFa-0uURPNnVUJ64Xayz0dK7F0oEI8f5l6vUmqqq1L9_uUo_/exec", {
+            method: 'POST',
+            body: formData
+        }).then(response => {
+            console.log(response);
+            if(response.ok==true){
+                MySwal.fire({
+                    icon: 'success',
+                    title: 'Thành Công',
+                    text: 'Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất.',
+                })
+            }else {
+                MySwal.fire({
+                    icon: 'error',
+                    title: 'Thất bại',
+                    text: 'Gửi thông tin không thành công',
+                })
+            }
+
+        }).catch(err => {
+            console.log("Error:" + err);
+        });
     }
 
     return (
@@ -576,15 +625,37 @@ export default function Home() {
                             </Row>
                             <Row className="row_two">
                                 <Col className="col_one" md={{span: 4, offset: 7}}>
-                                    <Form.Control className="input_form" type="nam"
-                                                  placeholder="Họ và Tên"/>
-                                    <Form.Control className="input_form" type="email" placeholder="Email"/>
-                                    <Form.Control className="input_form" type="phone"
-                                                  placeholder="Số điện thoại"/>
-                                    <Button className="mt-5 btn_submit" variant="primary" type="submit">
-                                        TƯ VẤN VÀ NHẬN BẢNG GIÁ TỐT NHẤT
-                                    </Button>
-
+                                    <Form onSubmit={handleSubmit}>
+                                        <Form.Control
+                                            className="input_form"
+                                            type="text"
+                                            name="name"
+                                            placeholder="Họ và Tên"
+                                            onChange={handleChange}
+                                        />
+                                        <Form.Control
+                                            className="input_form"
+                                            type="email"
+                                            name="email"
+                                            placeholder="Email"
+                                            onChange={handleChange}
+                                        />
+                                        <Form.Control
+                                            className="input_form"
+                                            type="phone"
+                                            name="phone"
+                                            placeholder="Số điện thoại"
+                                            onChange={handleChange}
+                                        />
+                                        <Form.Control
+                                            className="input_form"
+                                            type="hidden"
+                                            name="datetime"
+                                        />
+                                        <Button className="mt-5 btn_submit" variant="primary" type="submit">
+                                            TƯ VẤN VÀ NHẬN BẢNG GIÁ TỐT NHẤT
+                                        </Button>
+                                    </Form>
                                 </Col>
                             </Row>
                         </Container>
