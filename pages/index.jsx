@@ -5,16 +5,19 @@ import {Swiper, SwiperSlide} from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-import {Pagination, FreeMode} from "swiper";
+import {Pagination,Navigation, Mousewheel, Keyboard} from "swiper";
 import YouTube, {YouTubeProps} from 'react-youtube';
-import Navigation from "../components/Navigation";
+import NavigationHtml from "../components/Navigation";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
+import Carousel from 'react-bootstrap/Carousel';
+
 
 
 export default function Home() {
@@ -37,7 +40,7 @@ export default function Home() {
         <>
             <div className="click-closed"/>
 
-            <Navigation/>
+            <NavigationHtml/>
             <Swiper
                 modules={[Pagination]}
                 className="mySwiper section_one"
@@ -120,7 +123,7 @@ export default function Home() {
                 <section id="section_four" className="section-property section-t8 section_four">
                     <Container>
                         <Row className="row_one">
-                            <Col className="col_one" md={{span: 3}}>
+                            <Col className="col_one" md={{span: 3}} xs={{span: 6}}>
                                 <Image
                                     src="/assets/img/Layer_9.png"
                                     alt=''
@@ -130,7 +133,7 @@ export default function Home() {
                                     objectFit={'cover'}
                                 />
                             </Col>
-                            <Col className="col_two" md={{span: 3}}>
+                            <Col className="col_two" md={{span: 3}} xs={{span: 6}}>
                                 <Image
                                     src="/assets/img/1-coi-xay-gio.jpg"
                                     alt=''
@@ -159,7 +162,7 @@ export default function Home() {
                                 <hr/>
                                 <div className="text_eight">Loại hình sản phẩm: Nhà sát biển</div>
                                 <Row className="row_two">
-                                    <Col md={{span: 4}} xs={{span:4}}>
+                                    <Col md={{span: 4}} xs={{span: 4}}>
                                         <div className="text_nine">ĐƠN VỊ PHÁT TRIỂN</div>
                                         <Image
                                             src="/assets/img/dkrv.png"
@@ -170,7 +173,7 @@ export default function Home() {
                                             objectFit={'cover'}
                                         />
                                     </Col>
-                                    <Col md={{span: 4}} xs={{span:4}}>
+                                    <Col md={{span: 4}} xs={{span: 4}}>
                                         <div className="text_ten">CHỦ ĐẦU TƯ</div>
                                         <Image
                                             src="/assets/img/tdg.png"
@@ -181,7 +184,7 @@ export default function Home() {
                                             objectFit={'cover'}
                                         />
                                     </Col>
-                                    <Col md={{span: 4}} xs={{span:4}}>
+                                    <Col md={{span: 4}} xs={{span: 4}}>
                                         <div className="text_eleven">VẬN HÀNH VÀ KHAI THÁC</div>
                                         <Image
                                             src="/assets/img/eastin.png"
@@ -235,7 +238,7 @@ export default function Home() {
                                     objectFit={'cover'}
                                 />
                             </Col>
-                            <Col className='col_two' md={{span: 4}}>
+                            <Col className='col_two' md={{span: 5}}>
                                 <h2 className="title-a title_one section_title">“TÂM MẠCH GIAO THOA
                                     THỊNH VƯỢNG”</h2>
                                 <p>
@@ -254,29 +257,6 @@ export default function Home() {
                                     biển. Cư dân an tâm trải nghiệm một cách riêng tư và trọn vẹn nhất cùng gia
                                     đình.
                                 </p>
-                                {/*<Card className="bg-dark text-white card_one">
-                                    <Card.Img src="/assets/img/vi-tri-2.png" alt="Card image"/>
-                                    <Card.ImgOverlay>
-                                        <Card.Title>“TÂM MẠCH GIAO THOA
-                                            THỊNH VƯỢNG”</Card.Title>
-                                        <Card.Text>
-                                            Alaric Tower tọa lạc trên “cung đường vàng” Ba Tháng Hai – vị thế huyết mạch
-                                            kết nối
-                                            các danh lam thắng cảnh của tỉnh Vũng Tàu. Alaric Tower trấn giữ vị trí cửa
-                                            ngõ du
-                                            lịch nối liền các tỉnh phía Nam như Thành phố Hồ Chí Minh - Đồng Nai - Vũng
-                                            Tàu.
-                                            <br/>
-                                            <br/>
-                                            Được thừa hưởng riêng vẻ đẹp của thiên nhiên từ bãi tắm Chí Linh dài hơn
-                                            500m, tại
-                                            đây cư dân chỉ “một bước chạm đến đại dương” khi Alaric Tower có vị trí nằm
-                                            sát
-                                            biển. Cư dân an tâm trải nghiệm một cách riêng tư và trọn vẹn nhất cùng gia
-                                            đình.
-                                        </Card.Text>
-                                    </Card.ImgOverlay>
-                                </Card>*/}
                             </Col>
                         </Row>
                     </Container>
@@ -325,14 +305,91 @@ export default function Home() {
                         </Row>
                         <Row className="row_two pt-3">
                             <Col md={{span: 12}}>
-                                <Image
-                                    src="/assets/img/s-8.png"
-                                    alt=''
-                                    layout="intrinsic"
-                                    width={3556}
-                                    height={2118}
-                                    objectFit={'cover'}
-                                />
+                                <Carousel>
+                                    <Carousel.Item>
+                                        <Image
+                                            src="/assets/img/tien-ich-1.jpg"
+                                            alt=''
+                                            layout="intrinsic"
+                                            width={1296}
+                                            height={640}
+                                            objectFit={'cover'}
+                                        />
+                                        <Carousel.Caption>
+                                            <h3>Hồ bơi vô cực lớn nhất Vũng tàu 2.225m2 Sông lười</h3>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <Image
+                                            src="/assets/img/dong-song-luoi-du-an-the-maris.jpg"
+                                            alt=''
+                                            layout="intrinsic"
+                                            width={1296}
+                                            height={640}
+                                            objectFit={'cover'}
+                                        />
+
+                                        <Carousel.Caption>
+                                            <h3>Rolling Canal dài 350m</h3>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <Image
+                                            src="/assets/img/tien-ich-3.jpg"
+                                            alt=''
+                                            layout="intrinsic"
+                                            width={1296}
+                                            height={640}
+                                            objectFit={'cover'}
+                                        />
+
+                                        <Carousel.Caption>
+                                            <h3>Hầm rượu vang dưới biển đầu tiên tại Vũng Tàu</h3>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <Image
+                                            src="/assets/img/tien-ich-4.png"
+                                            alt=''
+                                            layout="intrinsic"
+                                            width={1296}
+                                            height={640}
+                                            objectFit={'cover'}
+                                        />
+
+                                        <Carousel.Caption>
+                                            <h3>Cầu tàu Huntington California & Bến du thuyền. </h3>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <Image
+                                            src="/assets/img/tien-ich-5.jpg"
+                                            alt=''
+                                            layout="intrinsic"
+                                            width={1296}
+                                            height={640}
+                                            objectFit={'cover'}
+                                        />
+
+                                        <Carousel.Caption>
+                                            <h3>Quảng trường Cối Xay Gió Moulin Rouge. </h3>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <Image
+                                            src="/assets/img/tien-ich-6.jpg"
+                                            alt=''
+                                            layout="intrinsic"
+                                            width={1296}
+                                            height={640}
+                                            objectFit={'cover'}
+                                        />
+
+                                        <Carousel.Caption>
+                                            <h3>Sân tập Golf</h3>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
                             </Col>
                         </Row>
                     </Container>
@@ -340,7 +397,7 @@ export default function Home() {
                 <section id="section_nine" className="section-agents section-t8 section_nine">
                     <Container>
                         <Row className="row_one">
-                            <Col md={{span: 12}} >
+                            <Col md={{span: 12}}>
                                 <div className="title-wrap d-flex justify-content-center">
                                     <div className="title-box">
                                         <h2 style={{color: '#fff'}} className="title-a title_one section_title">MẶT BẰNG
