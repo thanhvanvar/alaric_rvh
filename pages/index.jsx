@@ -23,7 +23,6 @@ import Form from 'react-bootstrap/Form';
 import Carousel from 'react-bootstrap/Carousel';
 
 
-
 export default function Home() {
 
     const [inputs, setInputs] = useState({});
@@ -45,7 +44,7 @@ export default function Home() {
         formData.append('phone', event.target.phone.value);
         formData.append('datetime', dateTime);
 
-        if(event.target.name.value==''){
+        if (event.target.name.value == '') {
             MySwal.fire({
                 icon: 'error',
                 title: 'Thất bại',
@@ -53,7 +52,7 @@ export default function Home() {
             })
             return false
         }
-        if(event.target.phone.value==''){
+        if (event.target.phone.value == '') {
             MySwal.fire({
                 icon: 'error',
                 title: 'Thất bại',
@@ -66,13 +65,16 @@ export default function Home() {
             body: formData
         }).then(response => {
             console.log(response);
-            if(response.ok==true){
+            if (response.ok == true) {
                 MySwal.fire({
                     icon: 'success',
                     title: 'Thành Công',
                     text: 'Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất.',
                 })
-            }else {
+                setTimeout(function(){
+                    window.location.reload();
+                }, 3000);
+            } else {
                 MySwal.fire({
                     icon: 'error',
                     title: 'Thất bại',
