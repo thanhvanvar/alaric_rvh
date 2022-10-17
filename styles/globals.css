@@ -129,6 +129,212 @@
     background-color: #05303a;
 }
 
+.section_nine .sku{
+    background-color: #05303a;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    border-radius: 30px;
+    border: 2px #ffffff solid;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.section_nine .sku:hover{
+    background-color: #ffffff;
+    text-align: center;
+    color: #05303a;
+    position: absolute;
+    border-radius: 30px;
+    border: 2px #05303a solid;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.section_nine .sku-1{
+    top: 25%;
+    right: 4.4%;
+}
+.section_nine .sku-2{
+    top: 67%;
+    right: 4.4%;
+}
+.section_nine .sku-3{
+    top: 25%;
+    right: 9.1%;
+}
+.section_nine .sku-4{
+    top: 67%;
+    right: 9.1%;
+
+}
+.section_nine .sku-5{
+    top: 25%;
+    right: 12.4%;
+}
+.section_nine .sku-6{
+    top: 67%;
+    right: 12.4%;
+
+}
+.section_nine .sku-7{
+    top: 25%;
+    right: 15.5%;
+}
+.section_nine .sku-8{
+    top: 67%;
+    right: 15.5%;
+
+}
+.section_nine .sku-9{
+    top: 25%;
+    right: 18.8%;
+}
+.section_nine .sku-10{
+    top: 67%;
+    right: 18.8%;
+}
+
+.section_nine .sku-11{
+    top: 25%;
+    right: 22%;
+}
+.section_nine .sku-12{
+    top: 67%;
+    right: 22%;
+}
+.section_nine .sku-13{
+    top: 25%;
+    right: 25.2%;
+}
+.section_nine .sku-14{
+    top: 67%;
+    right: 25.2%;
+}
+.section_nine .sku-15{
+    top: 25%;
+    right: 28.4%;
+}
+.section_nine .sku-16{
+    top: 67%;
+    right: 28.4%;
+}
+.section_nine .sku-17{
+    top: 25%;
+    right: 32.4%;
+}
+.section_nine .sku-18{
+    top: 67%;
+    right: 43%;
+}
+.section_nine .sku-19{
+    top: 25%;
+    right: 40.4%;
+}
+.section_nine .sku-20{
+    top: 67%;
+    right: 47.6%;
+}
+
+.section_nine .sku-21{
+    top: 25%;
+    right: 44.4%;
+}
+.section_nine .sku-22{
+    top: 67%;
+    right: 50.8%;
+}
+.section_nine .sku-23{
+    top: 25%;
+    right: 47.6%;
+}
+.section_nine .sku-24{
+    top: 67%;
+    right: 53.9%;
+}
+.section_nine .sku-25{
+    top: 25%;
+    right: 50.8%;
+}
+.section_nine .sku-26{
+    top: 67%;
+    right: 69.9%;
+}
+.section_nine .sku-27{
+    top: 25%;
+    right: 53.9%;
+}
+.section_nine .sku-28{
+    top: 67%;
+    right: 73.2%;
+}
+.section_nine .sku-29{
+    top: 25%;
+    right: 58%;
+}
+.section_nine .sku-30{
+    top: 67%;
+    right: 76.4%;
+}
+
+.section_nine .sku-31{
+    top: 25%;
+    right: 66%;
+}
+.section_nine .sku-32{
+    top: 67%;
+    right: 79.6%;
+}
+.section_nine .sku-33{
+    top: 25%;
+    right: 69.9%;
+}
+.section_nine .sku-34{
+    top: 67%;
+    right: 82.8%;
+}
+.section_nine .sku-35{
+    top: 25%;
+    right: 73.2%;
+}
+.section_nine .sku-36{
+    top: 67%;
+    right: 85.9%;
+}
+.section_nine .sku-37{
+    top: 25%;
+    right: 76.4%;
+}
+.section_nine .sku-38{
+    top: 67%;
+    right: 89.2%;
+}
+.section_nine .sku-39{
+    top: 25%;
+    right: 79.6%;
+}
+.section_nine .sku-40{
+    top: 67%;
+    right: 92.9%;
+}
+.section_nine .sku-41{
+    top: 25%;
+    right: 82.8%;
+}
+.section_nine .sku-43{
+    top: 25%;
+    right: 85.9%;
+}
+.section_nine .sku-45{
+    top: 25%;
+    right: 89.2%;
+}
+.section_nine .sku-47{
+    top: 25%;
+    right: 94.2%;
+}
 .section_eight .row_one {
     display: flex;
     align-items: center;
@@ -315,6 +521,9 @@ input::placeholder {
     .section_eight .carousel-caption h3{
         font-size: 14px;
         color:#ffffff;
+    }
+    .section_nine .sku{
+        display: none;
     }
 }
 

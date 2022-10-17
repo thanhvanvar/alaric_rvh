@@ -4,6 +4,7 @@ import {useState} from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
 
 import Swal from 'sweetalert2'
+import ReactPlayer from 'react-player'
 import withReactContent from 'sweetalert2-react-content'
 
 const MySwal = withReactContent(Swal)
@@ -21,6 +22,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Carousel from 'react-bootstrap/Carousel';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 
 
 export default function Home() {
@@ -71,7 +74,7 @@ export default function Home() {
                     title: 'Thành Công',
                     text: 'Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất.',
                 })
-                setTimeout(function(){
+                setTimeout(function () {
                     window.location.reload();
                 }, 3000);
             } else {
@@ -486,7 +489,7 @@ export default function Home() {
                             </Col>
                         </Row>
                         <Row className="row_three">
-                            <Col md={{span: 12}}>
+                            <Col md={{span: 12}} style={{position: 'relative'}}>
                                 <Image
                                     src="/assets/img/s-9-3.png"
                                     alt=''
@@ -495,6 +498,480 @@ export default function Home() {
                                     height={859}
                                     objectFit={'cover'}
                                 />
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 90.91 m2
+                                            <br/>
+                                            DT Thông thủy: 85.8 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-1">1</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 71.32 m2
+                                            <br/>
+                                            DT Thông thủy: 67.3 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-2">2</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-3">3</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-4">4</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-5">5</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-6">6</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-7">7</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-8">8</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-9">9</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-10">10</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-11">11</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-12">12</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-13">13</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-14">14</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-15">15</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-16">16</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 68.12 m2
+                                            <br/>
+                                            DT Thông thủy: 62.8 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-17">17</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-18">18</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 68.12 m2
+                                            <br/>
+                                            DT Thông thủy: 62.8 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-19">19</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-20">20</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-21">21</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-22">22</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-23">23</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-24">24</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-25">25</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-26">26</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-27">27</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-28">28</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 68.12 m2
+                                            <br/>
+                                            DT Thông thủy: 62.8 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-29">29</div>
+                                </OverlayTrigger>
+                                <div className="sku sku-30">30</div>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 68.12 m2
+                                            <br/>
+                                            DT Thông thủy: 62.8 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-31">31</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-32">32</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-33">33</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-34">34</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-35">35</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-36">36</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-37">37</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-38">38</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-39">39</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-40">40</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-41">41</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-43">43</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 44.54 m2
+                                            <br/>
+                                            DT Thông thủy: 41.44 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-45">45</div>
+                                </OverlayTrigger>
+                                <OverlayTrigger
+                                    overlay={
+                                        <Tooltip>
+                                            DT Tim tường: 90.91 m2
+                                            <br/>
+                                            DT Thông thủy: 85.8 m2
+                                        </Tooltip>
+                                    }
+                                >
+                                    <div className="sku sku-47">47</div>
+                                </OverlayTrigger>
                             </Col>
                         </Row>
                         <Row className="row_four">
@@ -523,13 +1000,14 @@ export default function Home() {
                             </Row>
                             <Row className="row_two">
                                 <Col md={{span: 6}}>
-                                    <iframe src='https://www.youtube.com/embed/E7wJTI-1dvQ'
+                                    <iframe src='https://www.youtube.com/embed/ysz5S6PUM-U'
                                             frameBorder='0'
                                             allow='autoplay; encrypted-media'
                                             allowFullScreen
                                             title='video'
                                             className='video_one'
                                     />
+                                    {/*<ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />*/}
                                 </Col>
                                 <Col md={{span: 6}}>
                                     <iframe src='https://www.youtube.com/embed/E7wJTI-1dvQ'
