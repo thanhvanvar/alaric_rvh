@@ -4,7 +4,6 @@ import {useState} from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
 
 import Swal from 'sweetalert2'
-import ReactPlayer from 'react-player'
 import withReactContent from 'sweetalert2-react-content'
 
 const MySwal = withReactContent(Swal)
@@ -46,6 +45,7 @@ export default function Home() {
         formData.append('email', event.target.email.value);
         formData.append('phone', event.target.phone.value);
         formData.append('datetime', dateTime);
+        console.log(formData)
 
         if (event.target.name.value == '') {
             MySwal.fire({
@@ -74,9 +74,9 @@ export default function Home() {
                     title: 'Thành Công',
                     text: 'Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất.',
                 })
-                setTimeout(function () {
+                /*setTimeout(function () {
                     window.location.reload();
-                }, 3000);
+                }, 3000);*/
             } else {
                 MySwal.fire({
                     icon: 'error',
@@ -102,11 +102,11 @@ export default function Home() {
                 <SwiperSlide>
                     <div className="intro intro-carousel swiper position-relative slide_one">
                         <div className="swiper-slide carousel-item-a intro-item bg-image swiper-slide-duplicate"
-                             style={{backgroundImage: "url(assets/img/maris.jpg)"}}>
+                             style={{backgroundImage: "url(assets/img/slide-01.jpg)"}}>
                             <div className="overlay overlay-a"/>
                             <div className="intro-content display-table">
                                 <div className="table-cell">
-                                    <div className="container">
+                                    {/*<div className="container">
                                         <div className="row">
                                             <div className="col-lg-9">
                                                 <div className="intro-body lh-lg">
@@ -122,7 +122,7 @@ export default function Home() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>*/}
                                 </div>
                             </div>
                         </div>
@@ -1000,7 +1000,7 @@ export default function Home() {
                             </Row>
                             <Row className="row_two">
                                 <Col md={{span: 6}}>
-                                    <iframe src='https://www.youtube.com/embed/ysz5S6PUM-U'
+                                    <iframe src='https://www.youtube.com/embed/MfcIQ2ke9BI'
                                             frameBorder='0'
                                             allow='autoplay; encrypted-media'
                                             allowFullScreen
@@ -1010,7 +1010,7 @@ export default function Home() {
                                     {/*<ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />*/}
                                 </Col>
                                 <Col md={{span: 6}}>
-                                    <iframe src='https://www.youtube.com/embed/E7wJTI-1dvQ'
+                                    <iframe src='https://www.youtube.com/embed/2Q71v3AnW90'
                                             frameBorder='0'
                                             allow='autoplay; encrypted-media'
                                             allowFullScreen
@@ -1181,7 +1181,7 @@ export default function Home() {
                             <div className="w-footer-a">
                                 <ul className="list-unstyled">
                                     <li className="color-a">
-                                        <span className="color-text-a"><i className="bi bi-phone"/></span> 0901 8888 02
+                                        <span className="color-text-a"><i className="bi bi-phone"/></span> 0931.2626.55
                                     </li>
                                 </ul>
                             </div>
