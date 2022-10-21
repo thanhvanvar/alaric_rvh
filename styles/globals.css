@@ -1,10 +1,18 @@
 
+.table-cell {
+    display: table-cell;
+    vertical-align: initial;
+}
+
 .section_one .slide_one .text_one {
     font-size: 50px;
+    color: #064e94;
+    margin-top: 120px;
 }
 
 .section_one .slide_one .text_two {
-    font-size: 24px;
+    font-size: 50px;
+    color:#4cc8d4;
 }
 
 .navbar {
@@ -499,7 +507,7 @@ input::placeholder {
     }
 
     .section_one .slide_one .text_two {
-        font-size: 14px;
+        font-size: 24px;
     }
     .section_four .col_three .title_one {
         font-weight: bold;

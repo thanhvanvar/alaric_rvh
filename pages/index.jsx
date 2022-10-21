@@ -102,27 +102,24 @@ export default function Home() {
                 <SwiperSlide>
                     <div className="intro intro-carousel swiper position-relative slide_one">
                         <div className="swiper-slide carousel-item-a intro-item bg-image swiper-slide-duplicate"
-                             style={{backgroundImage: "url(assets/img/slide-01.jpg)"}}>
+                             style={{backgroundImage: "url(assets/img/slide-02.jpg)"}}>
                             <div className="overlay overlay-a"/>
                             <div className="intro-content display-table">
                                 <div className="table-cell">
-                                    {/*<div className="container">
+                                    <div className="container">
                                         <div className="row">
                                             <div className="col-lg-9">
                                                 <div className="intro-body lh-lg">
-                                                    <h1 className="intro-title mb-4 text_one">
-                                                        ALARIC TOWER VUNG TAU<br/>
-                                                        HOME SWEET HOME<br/>
+                                                    <h2 className="intro-title mb-4 text_one">
+                                                        HOME SWEET HOME
+                                                    </h2>
+                                                    <h2 className="intro-title mb-4 text_two">
                                                         NHÀ MÌNH LÀ NHẤT
-                                                    </h1>
-                                                    <p className="intro-title-top text_two">
-                                                        Dự án căn hộ du lịch biển được đầu tư bởi<br/>
-                                                        CÔNG TY TNHH ALLGREEN VƯỢNG THÀNH - TRÙNG DƯƠNG
-                                                    </p>
+                                                    </h2>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>*/}
+                                    </div>
                                 </div>
                             </div>
                         </div>
