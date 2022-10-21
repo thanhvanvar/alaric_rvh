@@ -63,7 +63,7 @@ export default function Home() {
             })
             return false
         }
-        fetch("https://script.google.com/macros/s/AKfycbzTaVuPlCywFHqqSjkIJFa-0uURPNnVUJ64Xayz0dK7F0oEI8f5l6vUmqqq1L9_uUo_/exec", {
+        fetch("https://script.google.com/macros/s/AKfycbw6iFwGn9ztvJbMrnqZF3gnu-5x8SqEMYou44ODWb4OXtWEbNsyPojXwIfD2k7qNcvc8w/exec", {
             method: 'POST',
             body: formData
         }).then(response => {
