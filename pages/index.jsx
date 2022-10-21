@@ -1178,7 +1178,7 @@ export default function Home() {
                             <div className="w-footer-a">
                                 <ul className="list-unstyled">
                                     <li className="color-a">
-                                        <span className="color-text-a"><i className="bi bi-phone"/></span> 0931.2626.55
+                                        <span className="color-text-a"><i className="bi bi-phone"/></span>  0901.8888.02
                                     </li>
                                 </ul>
                             </div>
