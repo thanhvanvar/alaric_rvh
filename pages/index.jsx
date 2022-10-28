@@ -685,9 +685,9 @@ export default function Home() {
                                 <OverlayTrigger
                                     overlay={
                                         <Tooltip>
-                                            DT Tim tường: 44.54 m2
+                                            DT Tim tường: 79.71 m2
                                             <br/>
-                                            DT Thông thủy: 41.44 m2
+                                            DT Thông thủy: 75.01 m2
                                         </Tooltip>
                                     }
                                 >
@@ -917,9 +917,9 @@ export default function Home() {
                                 <OverlayTrigger
                                     overlay={
                                         <Tooltip>
-                                            DT Tim tường: 44.54 m2
+                                            DT Tim tường: 59.02 m2
                                             <br/>
-                                            DT Thông thủy: 41.44 m2
+                                            DT Thông thủy: 55.28 m2
                                         </Tooltip>
                                     }
                                 >
